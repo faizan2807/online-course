@@ -23,7 +23,7 @@ export function Dashlesson() {
 
   const handleDelete = (LessonId) => {
     if (window.confirm("Are you sure you want to delete this lesson?")) {
-      axios.delete(`http://127.0.0.1:9090/Lesson-delete/${LessonId}`) // ✅ Match backend route
+      axios.delete(`http://127.0.0.1:9090/Lesson-delete/${LessonId}`) 
         .then(() => {
           alert("Lesson deleted");
           setLessons(prev => prev.filter(lesson => lesson.LessonId !== LessonId));
@@ -50,10 +50,10 @@ export function Dashlesson() {
   return (
     <div className="container mt-4">
       <div>
-        <button className="bi bi-arrow-left" onClick={handleBack}></button>
+        <button className="bi bi-arrow-left btn btn-light mb-5 w-25" onClick={handleBack}></button>
       </div>
       <div className="float-end">
-        <button className="btn btn-success bi bi-plus" onClick={handleAddClick}>Add Lesson</button>
+        <button className="btn btn-success bi bi-plus p-3" onClick={handleAddClick}>Add Lesson</button>
       </div>
       <h2>Lessons for CourseId: {CourseId}</h2>
       <div className="row">

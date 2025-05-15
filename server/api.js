@@ -72,7 +72,7 @@ app.post("/add-course", (req, res) => {
     Title: req.body.Title,
     Description: req.body.Description,
     Category: req.body.Category,
-    CreatedBy: req.body.CreatedBy   // ✅ fixed from UserId
+    CreatedBy: req.body.CreatedBy   
   };
 
   mongoClient.connect(conString)

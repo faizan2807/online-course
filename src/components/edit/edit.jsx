@@ -41,7 +41,7 @@ export function Edit() {
   return (
     <div className="container-fluid d-flex justify-content-center w-100 p-4">
       <div className="border border-1 border-dark w-50">
-        <button className="btn btn-close float-end" onClick={handleCancel}></button>
+        <button className="btn btn-close float-end p-3" onClick={handleCancel}></button>
         <form className="p-5" onSubmit={formik.handleSubmit}>
           <h2>Edit Course</h2>
 

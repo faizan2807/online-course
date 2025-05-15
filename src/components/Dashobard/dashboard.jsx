@@ -44,10 +44,15 @@ export function Dashboard() {
     navigate('/add')
   }
 
+  function handleLogout(){
+    navigate('/login')
+  }
+
   return (
     <div className="container-fluid mt-4">
       <div className="m-3 p-3">
-        <button className="btn btn-success bi bi-plus p-3 float-end " onClick={handleAddClick}>Add Course</button>
+        <button className="btn btn-outline-success bi bi-plus p-3 justify-content-center " onClick={handleAddClick}>Add Course</button>
+        <button className="btn btn-outline-danger bi  bi-power float-end p-3 mb-3" onClick={handleLogout}>Log Out</button>
       </div>
       <h2 className="mb-4">All Courses</h2>
 

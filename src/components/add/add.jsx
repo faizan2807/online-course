@@ -33,7 +33,7 @@ export function Add() {
         <div className="container-fluid d-flex justify-content-center w-100  p-4">
             
             <div className="border border-1 border-black w-50">
-                <button className="btn btn-close float-end" onClick={handleBack}></button>
+                <button className="btn btn-close float-end p-3" onClick={handleBack}></button>
             <form className=" p-5" onSubmit={formik.handleSubmit}>
                 <h2>Add Course</h2>
                 <dt>CourseId</dt>
@@ -63,7 +63,7 @@ export function Add() {
                <dt>Category</dt>
                <dd>
                 <select name="Category"  className="form-control" onChange={formik.handleChange}>
-                <option value="-1"select Category></option>
+                <option value="-1">select Category</option>
                     <option value="Development">Development</option>
                     <option value="Tester">Tester</option>
                     <option value="project manager">project manager</option>
